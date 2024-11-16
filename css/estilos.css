@@ -1,0 +1,48 @@
+section, p{
+    width: 80%;
+    margin: 5%;
+    font-size: large;
+}
+section, img{
+    outline-style: groove;
+    outline-width: 3px;
+    outline-color: sienna;
+    background-color: black;
+}
+section, body{
+    background-position: center;
+    background-image: url("../src/kitchenWallPaper.png");
+    background-repeat: repeat;
+    background-size: contain;
+}
+section, .row, .column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.row{
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.padding{padding: 1%;}
+#lightsOut{flex-direction: column;}
+@media screen and (max-width: 850px) {
+    img{width: 90%;}
+    .column{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .row{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    section, header{flex-direction: column;}
+}
+@media screen and (max-width: 500px) {
+    section{
+        width: 100%;
+        margin: 0;
+    }
+}
